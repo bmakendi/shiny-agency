@@ -2,17 +2,21 @@ import Card from '../../components/Card'
 import styled from 'styled-components'
 import colors from '../../utils/styles/colors'
 
+const ContentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
 const CardContainer = styled.div`
     display: grid;
     gap: 24px;
     grid-template-rows: 350px 350px;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 65%;
-    margin: auto;
 `
 const TitleBox = styled.div`
     text-align: center;
-    margin: 2rem 0;
+    margin: 0.5rem 0;
     & .subtitle {
         color: ${colors.secondary};
         font-size: 1.4rem;
@@ -38,7 +42,7 @@ const Freelances = () => {
         },
     ]
     return (
-        <div>
+        <ContentContainer>
             <TitleBox>
                 <h1>Trouvez votre prestataire</h1>
                 <h2 className='subtitle'>
@@ -56,7 +60,7 @@ const Freelances = () => {
                     )
                 })}
             </CardContainer>
-        </div>
+        </ContentContainer>
     )
 }
 
