@@ -7,7 +7,6 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5rem;
     font-weight: 500;
 `
 

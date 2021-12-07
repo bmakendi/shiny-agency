@@ -9,7 +9,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
     body {
-        padding: 0 10rem;
+        padding: 1.5rem 10rem;
         font-family: 'Trebuchet MS';
     }
 `
